@@ -9,12 +9,13 @@
 
 <body>
     <h1>Exemplo de PHP</h1>
-    <?php
+    <?
     date_default_timezone_set("America/Sao_Paulo"); //GMT -3
     for ($c = 1; $c <= 10; $c++) {
-        echo "<p>Esse é o $c ° parágrafo! </p>";
+        echo "<p>Esse é o $c ° parágrafo! </p>\n    ";
     }
-    echo "Hoje é dia " . date("d") . " do ". date("m").", e a hora atual é ". date("H:i:s");
+    echo "<p>Hoje é dia " . date("d") . " do ". date("m").", e a hora atual é ". date("H:i:s") . "</p>";
+    
     ?>
 </body>
 
