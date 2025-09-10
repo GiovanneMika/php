@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(170, 170, 170);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+button, input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+}
+
+header{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+section{
+    background-color: white;
+    border-radius: 15px;
+    margin: auto;
+    padding: 15px;
+    max-width: 600px;
+}
+
+body p{
+    display: flex;
+}
+
+body p input {
+    margin: 0px 10px;
+    flex: 1 1 200px;
+}
+
+div#botao {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div#botao button{
+    margin: 10px 10px;
+    flex: 1 1 100px;
+}
