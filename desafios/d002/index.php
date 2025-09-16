@@ -7,13 +7,11 @@
     <link rel="stylesheet" href="../../cssGuanabara.css">
 </head>
 <body>
-    <h1>Sucessor e antecessor</h1>
     <main>
-        <form action="antsuc.php" method="get">
-            <label for="num">Numero:</label>
-            <input type="number" name="num" id="num">
-            <button type="submit">Enviar</button>
-        </form>
+        <h1>Trabalhando com números aleatórios</h1>
+        <p>Gerando um número aleatório entre 1 e 100...</p>
+        <p>O valor gerado foi <strong><?= rand(1, 100) ?></strong></p>
+        <button onclick="location.reload()">&#x1F504; Gerar outro</button>
     </main>
 </body>
 </html>

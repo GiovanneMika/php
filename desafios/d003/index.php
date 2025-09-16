@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../../cssGuanabara.css">
 </head>
 <body>
-    <h1>Sucessor e antecessor</h1>
     <main>
-        <form action="antsuc.php" method="get">
-            <label for="num">Numero:</label>
-            <input type="number" name="num" id="num">
-            <button type="submit">Enviar</button>
+        <h1>Conversor de Moedas v1.0</h1>
+        <form action="conversor.php" method="get">
+            <label for="valor">Quantos R$ você tem na carteira?</label>
+            <input type="number" name="valor" id="valor">
+            <input type="submit" value="Converter">
         </form>
     </main>
 </body>
