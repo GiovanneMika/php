@@ -8,7 +8,7 @@
 </head>
 
 <?php 
-    $numReal = $_GET["num"];
+    $numReal = $_GET["num"] ?? 0;
     $numRealInt = number_format(intval($numReal),0,",",".");
     $numRealDec = ($numReal*1000)%1000;
     $numRealFormatado = number_format($numReal, 3, ",", ".");

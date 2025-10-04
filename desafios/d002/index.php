@@ -10,8 +10,8 @@
     <main>
         <h1>Trabalhando com números aleatórios</h1>
         <p>Gerando um número aleatório entre 1 e 100...</p>
-        <p>O valor gerado foi <strong><?= rand(1, 100) ?></strong></p>
-        <button onclick="location.reload()">&#x1F504; Gerar outro</button>
+        <p>O valor gerado foi <strong><?= mt_rand(1, 100) ?></strong></p>
+        <button type="button" onclick="location.reload()">&#x1F504; Gerar outro</button>
     </main>
 </body>
 </html>

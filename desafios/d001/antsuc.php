@@ -10,15 +10,18 @@
 
 <body>
     <?php
-    $num = $_GET["num"];
+    $num = $_GET["num"] ?? 0;
 
     ?>
     <h1>Resultado:</h1>
     <main>
-        <p><?= "O número escolhido foi <strong>$num</strong> <br>Seu antecessor é <strong>" . ($num - 1) . "</strong><br> Seu sucessor é <strong>" . ($num + 1) . "</strong>";
-            ?></p>
+        <p>
+            <?=
+            "O número escolhido foi <strong>$num</strong> <br>Seu antecessor é <strong>" . ($num - 1) . "</strong><br> Seu sucessor é <strong>" . ($num + 1) . "</strong>";
+            ?>
+        </p>
 
-        <button onclick="history.back()">Voltar</button>
+        <button onclick="history.back()"> &#x2B05; Voltar</button>
     </main>
 </body>
 
