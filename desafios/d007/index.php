@@ -19,10 +19,10 @@
     $sobra = $salario % $salarioMinimo;
     ?>
     <main>
-        <h1>Anatomia de uma Divisão</h1>
+        <h1>Informe seu salário</h1>
         <form action="<?= $_SERVER["PHP_SELF"] ?>" method="get">
             <label for="salario">Salário (R$)</label>
-            <input type="number" name="salario" id="salario">
+            <input type="number" name="salario" id="salario" value="<?= $salario ?>">
             <p>Considerando salário mínimo de <strong><?= $salarioMinimoFormat ?></strong></p>
             <input type="submit" value="Calcular">
         </form>

@@ -17,6 +17,7 @@
     div>h1 {
         display: inline-block;
         padding: 20px 50px;
+        width: 200px;
     }
 
     h1.divisor {
@@ -24,7 +25,9 @@
         border-bottom: black 3px solid;
     }
 
-
+    h1.resultado {
+        border-left: black 3px solid;
+    }
     h1.resto {
         text-decoration: underline;
     }
@@ -46,9 +49,9 @@
         <h1>Anatomia de uma Divisão</h1>
         <form action="<?= $_SERVER["PHP_SELF"] ?>" method="get">
             <label for="dividendo">Dividendo</label>
-            <input type="number" name="dividendo" id="dividendo">
+            <input type="number" name="dividendo" id="dividendo" value="<?= $dividendo ?>">
             <label for="divisor">Divisor</label>
-            <input type="number" name="divisor" id="divisor">
+            <input type="number" name="divisor" id="divisor" value="<?= $divisor ?>">
             <input type="submit" value="Analisar">
         </form>
     </main>
